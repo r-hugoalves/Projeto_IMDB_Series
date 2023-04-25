@@ -10,7 +10,6 @@ Original file is located at
 #Bibliotecas que serão utilizadas
 import requests
 import csv
-import re
 from requests.exceptions import HTTPError
 from bs4 import BeautifulSoup
 
