@@ -11,4 +11,4 @@ Nesse processo, vamos trabalhar alguns conceitos básicos, mas muito importantes
 - Exportação para um arquivo .csv
 
 O código aqui presente possui diversos comentários por uma questão didática que será trabalhada e explicada no vídeo do canal:
-<a href="https://www.youtube.com/@r.hugoalves"> Aulão - YouTube </a>
+<a href="https://youtu.be/_erMdI1YTZk"> Aulão Python - YouTube </a>
