@@ -36,20 +36,20 @@ for linha in tabela.find_all('tr'):
 
 #Remoção das informações indesejadas
 
-if ['12345678910 ', '', '', '', 'NOT YET RELEASED', ' ', '', 'Seen'] in conteudo_extraido:
-  for i in conteudo_extraido:
+for i in conteudo_extraido:
+  if ['12345678910 ', '', '', '', 'NOT YET RELEASED', ' ', '', 'Seen'] in conteudo_extraido:
     conteudo_extraido.remove(['12345678910 ', '', '', '', 'NOT YET RELEASED', ' ', '', 'Seen'])
-else:
-  pass
+  else:
+    pass
 
 #print(conteudo_extraido)
 #print(len(conteudo_extraido))
 
-if [''] in conteudo_extraido:
-  for i in conteudo_extraido:
+for i in conteudo_extraido:
+  if [''] in conteudo_extraido:
     conteudo_extraido.remove([''])
-else:
-  pass
+  else:
+    pass
 
 #print(conteudo_extraido)
 #print(len(conteudo_extraido))
@@ -73,7 +73,7 @@ with open(file='Lista_Completa.csv', mode='w', encoding='utf8') as arquivo:
   escritor_csv = csv.writer(arquivo, delimiter=';')
 
   for i in range(0, len(ranking)):
-    rank = str(ranking).replace("'", '').replace('[', '').replace(']', '').split(sep=',')
+    rank = str(ranking).replace('[', '').replace(']', '').split(sep=',')
     name = str(nome_serie).replace("'", '').replace('[', '').replace(']', '').replace('"', '').split(sep=',')
     ano = str(ano_serie).replace("'", '').replace('[', '').replace(']', '').split(sep=',')
     avaliacao = str(avaliacao_serie).replace("'", '').replace('[', '').replace(']', '').split(sep=',')
